@@ -88,9 +88,20 @@
         font-size: 20px;
       }
 
+      .video-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 70vh;
+      }
+
+      .video-container iframe {
+        max-width: 100%;
+        max-height: 100%;
+      }
+
       /* Media Queries */
       @media (max-width: 767px) {
-
         /* Styles for mobile devices */
         header {
           padding: 10px;
@@ -117,17 +128,14 @@
   <body>
     <div class="background-image"></div>
     <div class="overlay">
-      <h1></h1>
-      <div class="video-container">
-        <iframe src="https://player.vimeo.com/video/VIDEO_ID" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
-      </div>
+    
     </div>
     <header>
-      <a href="https://netphoria.github.io">
-        <img src="https://cdn.discordapp.com/attachments/1107492231960600587/1116219578792550473/Netphoria_NPH_logo_png.png" alt="Logo" class="logo">
-      </a>
       <nav>
         <ul>
+          <li>
+            <a href="https://netphoria.github.io/">Home</a>
+          </li>
           <li>
             <a href="https://netphoria.github.io/netphoria-whoami.github.io/">Whoami</a>
           </li>
@@ -143,7 +151,11 @@
         </ul>
       </nav>
     </header>
-    <!-- Rest of your website content goes here -->
+
+    <div class="video-container">
+      <iframe src="https://player.vimeo.com/video/VIDEO_ID" width="640" height="360" frameborder="0" allowfullscreen></iframe>
+    </div>
+
     <div class="social-media">
       <a href="https://www.twitch.com/netph0ria" target="_blank">
         <img src="https://cdn.discordapp.com/attachments/1109865813558698117/1116289667369799750/twitch_1.png" alt="Twitch">
